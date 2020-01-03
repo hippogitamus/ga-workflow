@@ -1,6 +1,6 @@
 const getBooks = () => {
   return $.ajax({
-    url: 'https://wdi-library-api.herokuapp.com/books/getBooks/',
+    url: 'https://wdi-library-api.herokuapp.com/books/',
     method: 'GET'
   })
 }

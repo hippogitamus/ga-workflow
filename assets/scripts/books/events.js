@@ -1,9 +1,12 @@
-// const api = require('./api.js')
+const api = require('./api.js')
+// const ui = require('./ui.js')
 
 const onGetBooks = (event) => {
   event.preventDefault()
   console.log('button works!')
-  // api.getBooks()
+  api.getBooks()
+    .then(console.log('api works yayayaw'))
+    .catch(console.error)
 }
 
 const addHandlers = event => {
